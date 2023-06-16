@@ -13,7 +13,7 @@ const Main = () => {
         </h1>
         <div>
           <p className="md:text-5xl sm:text-4xl text-xl font-bold text-slate-500 mb-4">
-            Fast , Flexible , Financing for{" "}
+            Fast , Flexible Financing for{" "}
             <Typed
               strings={["BTB", "BTC", "SASS"]}
               typeSpeed={120}
