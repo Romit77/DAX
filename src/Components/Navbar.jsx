@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 ">
-      <h1 className=" w-full text-3xl font-bold text-[#00df98]">DZone</h1>
+      <h1 className=" w-full text-3xl font-bold text-[#00df98]">DAX</h1>
       <ul className="hidden md:flex">
         <li className="p-4 cursor-pointer">Home</li>
         <li className="p-4 cursor-pointer">Company</li>
@@ -28,7 +28,7 @@ const Navbar = () => {
             : "fixed left-[-100%] ease-in-out duration-500"
         }
       >
-        <h1 className=" w-full text-3xl font-bold text-[#00df98] m-3">DZone</h1>
+        <h1 className=" w-full text-3xl font-bold text-[#00df98] m-3">DAX</h1>
         <ul className=" uppercase ">
           <li className="p-4 border-b border-gray-600">Home</li>
           <li className="p-4 border-b border-gray-600">Company</li>

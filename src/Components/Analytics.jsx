@@ -19,7 +19,7 @@ const Analytics = () => {
               help you make sense of your data. Start harnessing the potential
               of data today.
             </p>
-            <button className="bg-[black] w-[200px] rounded-md my-6 mx-auto p-3 text-[#00df9a] md:mx-[0px] ">
+            <button className="bg-[black] font-semibold w-[200px] rounded-md my-6 mx-auto p-3 text-[#00df9a] md:mx-[0px] ">
               Get started
             </button>
           </div>
