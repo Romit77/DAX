@@ -8,7 +8,7 @@ const Main = () => {
           Growing your business is hard. Financing it shouldn<span>&#39;</span>t
           be.
         </p>
-        <h1 className=" bg-gradient-to-r from-gray-300 to-gray-600 text-transparent bg-clip-text md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mb-3 ">
+        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mb-3">
           Grow With Data
         </h1>
         <div>
