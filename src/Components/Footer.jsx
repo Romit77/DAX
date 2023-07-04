@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
       <div>
-        <h1 className="w-full text-3xl font-bold text-[#00df9a]">DAX</h1> 
+        <h1 className="w-full text-3xl font-bold text-[#00df9a]">DAX</h1>
         <p className="py-4">
           Unlock insights, drive growth. Empowering businesses with actionable
           data to make informed decisions and stay ahead in the game.
@@ -61,6 +61,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <p className="flex justify-center items-center w-[1240px] h-[1px]">
+        @2023 Romit77
+      </p>
     </div>
   );
 };
