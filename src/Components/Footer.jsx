@@ -16,11 +16,11 @@ const Footer = () => {
           data to make informed decisions and stay ahead in the game.
         </p>
         <div className="flex justify-between md:w-[75%] my-6">
-          <FaFacebookSquare size={30} />
-          <FaInstagram size={30} />
-          <FaTwitterSquare size={30} />
-          <FaGithubSquare size={30} />
-          <FaDribbbleSquare size={30} />
+          <FaFacebookSquare size={30} style={{ cursor: "pointer" }} />
+          <FaInstagram size={30} style={{ cursor: "pointer" }} />
+          <FaTwitterSquare size={30} style={{ cursor: "pointer" }} />
+          <FaGithubSquare size={30} style={{ cursor: "pointer" }} />
+          <FaDribbbleSquare size={30} style={{ cursor: "pointer" }} />
         </div>
       </div>
       <div className="lg:col-span-2 flex justify-between mt-6">
@@ -61,7 +61,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className="flex justify-center items-center w-[1240px] h-[1px]">
+      <p
+        style={{ cursor: "pointer" }}
+        className="flex justify-center items-center w-[1240px] h-[1px]"
+      >
         @2023 Romit77
       </p>
     </div>
