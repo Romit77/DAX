@@ -65,7 +65,7 @@ const Footer = () => {
         style={{ cursor: "pointer" }}
         className="flex justify-center items-center w-[1240px] h-[1px]"
       >
-        @2023 Romit77
+        [@2023 Romit77]
       </p>
     </div>
   );
