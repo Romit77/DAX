@@ -1,16 +1,27 @@
 import Typed from "react-typed";
+import { motion } from "framer-motion";
 
 const Main = () => {
   return (
     <div className="text-white">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
-        <p className="text-[#00df9a] font-semibold p-2">
+        <motion.p
+          className="text-[#00df9a] font-semibold p-2"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.75 }}
+        >
           Growing your business is hard. Financing it shouldn<span>&#39;</span>t
           be.
-        </p>
-        <h1 className=" bg-gradient-to-r from-gray-300 to-gray-700 text-transparent bg-clip-text md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mb-3 ">
+        </motion.p>
+        <motion.h1
+          className=" bg-gradient-to-r from-gray-300 to-gray-700 text-transparent bg-clip-text md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mb-3 "
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.75 }}
+        >
           Grow With Data
-        </h1>
+        </motion.h1>
         <div>
           <p className="md:text-5xl sm:text-4xl text-xl font-bold text-slate-500 mb-4">
             Fast , Flexible Financing for{" "}
@@ -22,9 +33,13 @@ const Main = () => {
             />
           </p>
         </div>
-        <button className="bg-[#00df9a] w-[200px] rounded-md font-bold my-6 mx-auto p-3 text-black ">
+        <motion.button
+          className="bg-[#00df9a] w-[200px] rounded-md font-bold my-6 mx-auto p-3 text-black"
+          drag
+          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+        >
           Get Started
-        </button>
+        </motion.button>
       </div>
     </div>
   );

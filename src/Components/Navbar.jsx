@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -8,11 +9,23 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const ref = useRef(null);
+
   return (
-    <div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 ">
-      <h1 className=" w-full text-3xl font-bold text-[#00df98] cursor-pointer">
+    <div
+      ref={ref}
+      className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 "
+    >
+      <motion.h1
+        className=" w-full text-3xl font-bold text-[#00df98] cursor-pointer"
+        drag
+        dragConstraints={ref}
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.75 }}
+      >
         DAX
-      </h1>
+      </motion.h1>
       <ul className="hidden md:flex">
         <li className="p-4 cursor-pointer">Home</li>
         <li className="p-4 cursor-pointer">Company</li>

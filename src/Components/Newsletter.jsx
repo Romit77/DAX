@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
+
 const Newsletter = () => {
   return (
-    <div className="w-full py-16 text-white px-4">
+    <motion.div className="w-full py-16 text-white px-4">
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 ">
         <div className="lg:col-span-2">
           <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
@@ -21,7 +23,7 @@ const Newsletter = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
