@@ -6,7 +6,7 @@ const Main = () => {
     <div className="text-white">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
         <motion.p
-          className="text-[#00df9a] font-semibold p-2"
+          className="text-gray-200"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.75 }}
@@ -15,7 +15,7 @@ const Main = () => {
           be.
         </motion.p>
         <motion.h1
-          className=" bg-gradient-to-r from-gray-300 to-gray-700 text-transparent bg-clip-text md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mb-3 "
+          className="bg-gradient-to-r from-blue-600 via-green-500  text-transparent bg-clip-text md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mb-3 "
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.75 }}

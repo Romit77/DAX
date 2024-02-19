@@ -26,13 +26,18 @@ const Navbar = () => {
       >
         DAX
       </motion.h1>
-      <ul className="hidden md:flex">
+      <motion.ul
+        className="hidden md:flex"
+        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 0.75 }}
+      >
         <li className="p-4 cursor-pointer">Home</li>
         <li className="p-4 cursor-pointer">Company</li>
         <li className="p-4 cursor-pointer">Resources</li>
         <li className="p-4 cursor-pointer">About</li>
         <li className="p-4 cursor-pointer">Contact</li>
-      </ul>
+      </motion.ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>

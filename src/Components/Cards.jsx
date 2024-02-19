@@ -1,10 +1,13 @@
 import single from "../assets/single.png";
 import double from "../assets/double.png";
 import triple from "../assets/triple.png";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const Cards = () => {
+  const refrence = useRef(null);
   return (
-    <div className="w-full py-[10rem] px-4 bg-white ">
+    <div className="w-full py-[10rem] px-4 bg-white " ref={refrence}>
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 ">
         <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-lg hover:scale-105 duration-300   ">
           <img
