@@ -9,7 +9,16 @@ const Cards = () => {
   return (
     <div className="w-full py-[10rem] px-4 bg-white " ref={refrence}>
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 ">
-        <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-lg hover:scale-105 duration-300   ">
+        <motion.div
+          className="w-full shadow-xl flex flex-col py-4 my-4 rounded-lg hover:scale-105 duration-300   "
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.2 },
+          }}
+        >
           <img
             className="w-20 mx-auto mt-[-3rem] bg-white bg-transparent"
             src={single}
@@ -21,11 +30,20 @@ const Cards = () => {
             <p className="py-2  mx-8 ">1 Granted User</p>
             <p className="py-2  mx-8 ">Send files upto 2 GB</p>
           </div>
-          <button className=" bg-[#00df98] rounded-md mx-auto w-[200px]  text-black p-2 font-semibold mt-3 ">
+          <motion.button className=" bg-[#00df98] rounded-md mx-auto w-[200px]  text-black p-2 font-semibold mt-3 ">
             Start Trail
-          </button>
-        </div>
-        <div className="w-full shadow-xl flex flex-col py-4 rounded-lg hover:scale-105 duration-300 my-0 bg-gray-100 ">
+          </motion.button>
+        </motion.div>
+        <motion.div
+          className="w-full shadow-xl flex flex-col py-4 rounded-lg hover:scale-105 duration-300 my-0 bg-gray-100 "
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.2 },
+          }}
+        >
           <img
             className="w-20 mx-auto mt-[-3rem] bg-white bg-transparent"
             src={double}
@@ -40,8 +58,17 @@ const Cards = () => {
           <button className=" bg-[black] rounded-md mx-auto w-[200px]  text-[#00df98] p-2 font-semibold mt-3 ">
             Start Trail
           </button>
-        </div>
-        <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-lg hover:scale-105 duration-300   ">
+        </motion.div>
+        <motion.div
+          className="w-full shadow-xl flex flex-col py-4 my-4 rounded-lg hover:scale-105 duration-300   "
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.2 },
+          }}
+        >
           <img
             className="w-20 mx-auto mt-[-3rem] bg-white bg-transparent"
             src={triple}
@@ -56,7 +83,7 @@ const Cards = () => {
           <button className=" bg-[#00df98] rounded-md mx-auto w-[200px]  text-black p-2 font-semibold mt-3">
             Start Trail
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -29,7 +29,6 @@ const Analytics = () => {
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.75 }}
-              onScroll={console.log("scroll")}
             >
               Unlock the power of data with our cutting-edge analytics
               solutions. Transform raw info into actionable insights, drive
@@ -38,11 +37,7 @@ const Analytics = () => {
               help you make sense of your data. Start harnessing the potential
               of data today.
             </motion.p>
-            <motion.button
-              className="bg-[black] font-semibold w-[200px] rounded-md my-6 mx-auto p-3 text-[#00df9a] md:mx-[0px] "
-              drag
-              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            >
+            <motion.button className="rounded-2xl border-2 border-dashed border-black bg-[#00df98] px-1 py-3 font-semibold  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none w-[150px] my-2 md:mx-[0px] mt-5">
               Get started
             </motion.button>
           </div>

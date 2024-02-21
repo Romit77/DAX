@@ -35,6 +35,13 @@ const Main = () => {
         </div>
         <motion.button
           className="bg-[#00df9a] w-[200px] rounded-md font-bold my-6 mx-auto p-3 text-black"
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.75 }}
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.2 },
+          }}
           drag
           dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
         >

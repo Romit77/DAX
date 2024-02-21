@@ -42,8 +42,6 @@ const Newsletter = () => {
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.75 }}
-              drag
-              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             >
               Notify Me
             </motion.button>
