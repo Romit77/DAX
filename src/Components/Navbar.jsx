@@ -20,17 +20,17 @@ const Navbar = () => {
         className=" w-full text-3xl font-bold text-[#00df98] cursor-pointer"
         drag
         dragConstraints={ref}
-        initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.75 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
       >
         DAX
       </motion.h1>
       <motion.ul
         className="hidden md:flex"
-        animate={{ x: 0, opacity: 1 }}
-        initial={{ x: -100, opacity: 0 }}
-        transition={{ duration: 0.75 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
       >
         <li className="p-4 cursor-pointer">Home</li>
         <li className="p-4 cursor-pointer">Company</li>
