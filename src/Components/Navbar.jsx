@@ -25,7 +25,7 @@ const Navbar = () => {
         drag
         dragConstraints={ref}
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
         DAX
@@ -33,7 +33,7 @@ const Navbar = () => {
       <motion.ul
         className="hidden md:flex"
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
         <li className="p-4 cursor-pointer">Home</li>
