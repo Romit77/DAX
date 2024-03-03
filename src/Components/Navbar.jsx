@@ -14,7 +14,11 @@ const Navbar = () => {
   return (
     <div
       ref={ref}
-      className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 "
+      className="text-white flex justify-between items-center h-24 w-full mx-auto px-4 z-20 sticky top-0"
+      style={{
+        background: "transparent",
+        backdropFilter: "blur(5px)",
+      }}
     >
       <motion.h1
         className=" w-full text-3xl font-bold text-[#00df98] cursor-pointer"
