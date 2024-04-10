@@ -41,7 +41,7 @@ const AuroraHero = () => {
         <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-bold leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight ">
           Decrease your SaaS churn by over 90%
         </h1>
-        <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed ">
+        <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed   ">
           Fast flexible financing for your SaaS business. Get your cash flow
         </p>
         <motion.button
